@@ -1,0 +1,131 @@
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    margin-top: 10%;
+}
+
+.split{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 45%;
+    height: 300px;
+    margin: auto;
+
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+#todo_form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#todo_list{
+    overflow-y: auto;
+    height: 50%;
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#date{
+    background-color: deepskyblue;
+}
+
+#date:hover{
+    background-color: lightskyblue;
+}
+
+#delete{
+    background-color: tomato;
+}
+
+#delete:hover{
+    background-color: orange;
+}
+
+.btn-design{
+    background-color: tomato;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+.btn-design:hover{
+    background-color: orange;
+    animation: hoveronbtns;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#todo{
+    background-color: navajowhite;
+    border: gray 2x solid;
+    width: 85%;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#todo_list::-webkit-scrollbar{
+    background-color: gainsboro;
+    width: 10px;
+    height: 0px;
+    border-radius: 10px;
+}
+
+
+#todo_list::-webkit-scrollbar-thumb{
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+
+@keyframes hoveronbtns{
+    0%{transform: scaleX(1);
+    transform: scaleY(1);}
+    50%{transform: scaleX(.8);
+        transform: scaleY(.8);}
+
+}
+
+
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

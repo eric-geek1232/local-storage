@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="split">
+            <h1>Organizate</h1>
+            <form action="#" id="todo_form">
+                <label>Actividad:</label>
+                <input type="text" placeholder="Hacer las compras..." id="todo" autocomplete="off" required>
+                <div>
+                    <input type="submit" value="add_circle" id="date" class="material-icons md-36 btn-design">
+                    <input type="submit" value="delete" class="material-icons md-36 btn-design" id="delete">
+                    <input type="submit" value="delete_forever" class="material-icons md-36 btn-design" id="delete-all">
+                </div>
+            </form>
+        </div>
+
+        <div class="split">
+            <h1>Cosas por hacer</h1>
+            <ol id="todo_list">
+            </ol>
+        </div>
+    </div>
+
+    <script src="./local-storage.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
